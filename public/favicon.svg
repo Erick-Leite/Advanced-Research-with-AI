@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="PAIA — Pesquisa Avançada com Inteligência Artificial">
+  <title>PAIA</title>
+  <defs>
+    <linearGradient id="gL" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="256" y2="256">
+      <stop offset="0" stop-color="#2563EB"/><stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="gD" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="256" y2="256">
+      <stop offset="0" stop-color="#60A5FA"/><stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <style>.s{stroke:url(#gL)}.t{fill:url(#gL)}.a{stroke:#22D3EE}@media (prefers-color-scheme:dark){.s{stroke:url(#gD)}.t{fill:url(#gD)}.a{stroke:#A5F3FC}}</style>
+  </defs>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- anel externo da lupa (fechado e contínuo) -->
+    <circle class="s" cx="101.6" cy="101.6" r="71" stroke-width="10"/>
+    <!-- cabo em funil: gargalo alargado + haste longa vazada -->
+    <path class="s" stroke-width="10" d="M172.37 123.24 L177.26 161.7 L225.4 209.85"/>
+    <path class="s" stroke-width="10" d="M123.24 172.37 L161.7 177.26 L209.85 225.4"/>
+    <!-- globo wireframe (linhas interrompidas onde o texto "web" ocupa) -->
+    <g class="s" stroke-width="3.2">
+      <circle cx="101.6" cy="101.6" r="34"/>
+      <path d="M101.6 67.6 V92.1 M101.6 111.1 V135.6"/>
+      <path d="M67.6 101.6 H79.6 M123.6 101.6 H135.6"/>
+      <path d="M72.16 84.6 H131.04 M72.16 118.6 H131.04"/>
+      <path d="M101.6 67.6 A17 34 0 0 1 117.93 92.1"/>
+      <path d="M117.93 111.1 A17 34 0 0 1 101.6 135.6"/>
+      <path d="M101.6 67.6 A17 34 0 0 0 85.27 92.1"/>
+      <path d="M85.27 111.1 A17 34 0 0 0 101.6 135.6"/>
+    </g>
+    <!-- texto web -->
+    <text class="t" x="101.6" y="107" text-anchor="middle" textLength="38" lengthAdjust="spacingAndGlyphs" font-family="Inter,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="20" font-weight="700">web</text>
+    <!-- interligação dos 8 nós: circunferência r=50 com vão de 11 em cada nó (encaixe côncavo sob o anel do nó) -->
+    <circle class="s" cx="101.6" cy="101.6" r="50" stroke-width="2" stroke-linecap="butt" stroke-dasharray="28.27 11" stroke-dashoffset="33.77"/>
+    <!-- arco de progresso 0°->67,5°; a ponta convexa (2,6) ultrapassa a branca (1,0) em 1,6 = 0,8x a espessura -->
+    <path class="a" stroke-width="5.2" d="M101.6 51.6 A50 50 0 0 1 147.79 82.47"/>
+    <!-- trecho branco centralizado sobre o arco: 0° -> 67,5°, ponta convexa -->
+    <path stroke="#FFFFFF" stroke-width="2" d="M101.6 51.6 A50 50 0 0 1 147.79 82.47"/>
+    <!-- 8 nós de circuito (camada superior) — 0° e 45° ativos -->
+    <g class="s" stroke-width="2.2">
+      <circle cx="101.6" cy="51.6" r="5.5" fill="#FFFFFF"/>
+      <circle cx="136.96" cy="66.24" r="5.5" fill="#FFFFFF"/>
+      <circle cx="151.6" cy="101.6" r="5.5"/>
+      <circle cx="136.96" cy="136.96" r="5.5"/>
+      <circle cx="101.6" cy="151.6" r="5.5"/>
+      <circle cx="66.24" cy="136.96" r="5.5"/>
+      <circle cx="51.6" cy="101.6" r="5.5"/>
+      <circle cx="66.24" cy="66.24" r="5.5"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "google.gemini-cli-vscode-ide-companion",
+    "vue.volar",
+    "dbaeumer.vscode-eslint",
+    "nuxtr.nuxtr-vscode",
+    "bradlc.vscode-tailwindcss",
+    "streetsidesoftware.code-spell-checker",
+    "esbenp.prettier-vscode"
+  ]
+}
