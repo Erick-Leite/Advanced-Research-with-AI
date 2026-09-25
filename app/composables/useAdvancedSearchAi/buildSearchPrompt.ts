@@ -14,8 +14,9 @@ https://advanced-research-ai.vercel.app/ai-search-filter
 
 https://advanced-research-ai.vercel.app/persona`,
     extraFilterReference && `AI Extra Search Filter: ${extraFilterReference}`,
-    (searchParams || extraSearchParamsOrOperators) &&
-      `AI Search Filter: ${[searchParams, extraSearchParamsOrOperators].join(" ")}`,
+    (extraSearchParamsOrOperators || searchParams) &&
+      // Os parâmetros/operadores de busca extra devem vir no início do campo `AI Search Filter` para evitar conflitos com os parâmetros de busca principais
+      `AI Search Filter: ${[extraSearchParamsOrOperators, searchParams].join(" ")}`,
     userPrompt &&
       userLanguageIsPtBr &&
       `Adote a persona antes de responder ao prompt do usuário abaixo:
