@@ -23,6 +23,7 @@
       "dbaeumer.vscode-eslint"
       "bradlc.vscode-tailwindcss"
       "streetsidesoftware.code-spell-checker"
+      "streetsidesoftware.code-spell-checker-portuguese-brazilian"
       "esbenp.prettier-vscode"
     ];
 
